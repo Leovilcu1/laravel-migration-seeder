@@ -18,9 +18,16 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <img src="{{ Vite::asset('resources/img/laravel.png') }}" alt="">
+                                @foreach ($trains as $train)
+                                <h1>{{ $train->id }}</h1>
+                                <h1>{{ $train->azienda }}</h1>
 
-                                <h1 class="card-title">Laravel 9 + Bootstrap Template</h1>
+                                <h1>{{ $train }}</h1>
+
+
+                                @endforeach
+                                
+
                             </div>
                         </div>
 

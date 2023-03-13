@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Guest\homecontroller;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\train;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[homecontroller::class,"index"]);
