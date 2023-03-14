@@ -20,9 +20,19 @@
                             <div class="card-body">
                                 @foreach ($trains as $train)
                                 <h1>{{ $train->id }}</h1>
-                                <h1>{{ $train->azienda }}</h1>
+                                <h1>{{ $train->azienda, }}</h1>
+                                <ul>
+                                    <li><a href="#">Stazione di partenza : {{ $train->stazione_di_partenza, }}</a></li>
+                                    <li><a href="#">Stazione di arrivo : {{ $train->stazione_di_arrivo }}</a></li>
+                                    <li><a href="#">Orario di partenza : {{ $train->orario_di_partenza }}</a></li>
+                                    <li><a href="#">Orario di arrivo : {{ $train->orario_di_arrivo }}</a></li>
+                                    <li><a href="#">Codice treno :  {{ $train->codice_treno }}</a></li>
+                                    <li><a href="#"> Numero Carozze : {{ $train->numero_carozza }}</a></li>
+                                    <li><a href="#"> Ritarda :{{ $train->on_time }}</a></li>
+                                    <li><a href="#"> cancellato :{{ $train->cancellato }}</a></li>
+                                </ul>
 
-                                <h1>{{ $train }}</h1>
+
 
 
                                 @endforeach

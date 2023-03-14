@@ -9,7 +9,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
-     *
+     *t
      * @return void
      */
     public function run()
